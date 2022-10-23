@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../ADEX_neuron.srcs/sources_1/new/ADEX_neuron.sv" \
+"../../../../ADEX_neuron.srcs/sim_1/new/test.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
